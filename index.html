@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoramento - Segurança</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container" id="login-screen">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Digite seu nome de usuário" />
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div class="container hidden" id="dashboard">
+    <h2>Chamados - <span id="user-display"></span></h2>
+    <div id="chamados-list"></div>
+  </div>
+
+  <div class="container hidden" id="detalhes-chamado">
+    <h2>Detalhes do Chamado</h2>
+    <p><strong>Prioridade:</strong> <span id="prioridade"></span></p>
+    <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+    <textarea id="relato" placeholder="Descreva o atendimento..."></textarea>
+    <div class="buttons">
+      <button onclick="concluirChamado()">Concluir</button>
+      <button onclick="voltar()">Voltar</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
